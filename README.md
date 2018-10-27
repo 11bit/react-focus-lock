@@ -146,9 +146,9 @@ Only `last`, or `deepest` one will work. No fighting.
  >> React will first call Parent.componentWillUnmount, and next Child.componentWillUnmount
  
  Thus means - Trap will be still active, be the time you _may_ want move(return) focus on componentWillUnmount. Please deffer this action with a zero-timeout. 
-     
+     '
 # How it works
- Everything thing is simple - react-focus-lock just dont left focus left boundaries of component, and
+ Everything thing is simple - react-focus-lock just don't let focus left boundaries of component, and
  do something only if escape attempt was succeeded.
  
  It is not altering tabbing behavior at all. We are good citizens.
@@ -157,7 +157,7 @@ Only `last`, or `deepest` one will work. No fighting.
  Uses [focus-lock](https://github.com/theKashey/focus-lock/) under the hood. It does also provide support for Vue.js and Vanilla DOM solutions
  
 # More
-Dont forget to lock the scroll to complete the picture.
+Don't forget to lock the scroll to complete the picture.
  [react-scroll-locky](https://github.com/theKashey/react-scroll-locky) - browser scrollbars hiding, you were looking for.
 
 # Warning!
@@ -175,7 +175,7 @@ import { FreeFocusInside } from 'react-focus-lock';
 
 <FreeFocusInside>
  <div id="portal-for-modals">
-   in this div i am going to portal my modals, dont fight with them please
+   in this div i am going to portal my modals, don't fight with them please
  </div>
 </FreeFocusInside>
 ```
@@ -200,7 +200,7 @@ PS: __please use webpack or yarn resolution for force one version of react-focus
 # Package size
 About __6kb__ _with all dependencies, minified and gzipped_.
 
-# Licence
+# License
  MIT
  
  
